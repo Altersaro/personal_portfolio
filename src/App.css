@@ -242,7 +242,7 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
 .banner::before{
   content: "";
   background-image: url('./assets/img/code2.jpg');
-  background-position: top center;
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
   position: absolute;
@@ -586,6 +586,27 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   .item{
     margin: 5px;
     padding: 5px;
+  }
+
+  .banner::before{
+    content: "";
+    background-image: url('./assets/img/code.jpg');
+    background-position: 20%;
+    background-repeat: no-repeat;
+    position: absolute;
+      top: 0px;
+      right: 0px;
+      bottom: 0px;
+      left: 0px;        
+      opacity: 0.75;
+  }
+
+  .banner p {
+    color: #C657FC;
+    font-size: 20px;
+    letter-spacing: 0.8px;
+    line-height: 1.5em;
+    width: 96%;
   }
 }
 
