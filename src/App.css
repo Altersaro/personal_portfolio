@@ -588,6 +588,10 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     padding: 5px;
   }
 
+  nav.navbar{
+    background-color: rgba(2, 62, 115, 0.9);
+  }
+
   .banner::before{
     content: "";
     background-image: url('./assets/img/code.jpg');
