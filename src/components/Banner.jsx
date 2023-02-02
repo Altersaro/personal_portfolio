@@ -1,10 +1,8 @@
 import React from 'react';
 import {Container, Row, Col} from "react-bootstrap";
-import { ArrowRightCircle } from 'react-bootstrap-icons';
 import Me from "../assets/img/me.jpg";
 
 import 'animate.css';
-import TrackVisibility from 'react-on-screen';
 
 
 function Banner() {
@@ -51,14 +49,11 @@ function Banner() {
         <Container>
             <Row className='align-items-center'>
                 <Col xs={12} md={6} xl={6}>
-                    <TrackVisibility>
-                    {({isVisible}) => 
-                        <div className={isVisible ? "animate__animated animate__fadeInLeft":""}>
+                        <div className="animate__animated animate__fadeInLeft">
                             <span className='tagline'> Welcome to my Portfolio </span>
                             <h1>{`Hi i'm Rosario Luca Linguanti `} <span className='wrap'>{text}</span></h1>
                             <p>I’ve always loved experimenting and creating something from scratch, programming has made this dream possible.I enjoy to create functional websites with impactful design that make the user experience rewarding and unique also I am passionate about video games and technology. </p>
-                        </div>}
-                    </TrackVisibility>
+                        </div>
                 </Col> 
                 <Col xs={12} md={6} xl={6} className='d-flex justify-content-end'>
                     <img src={Me} alt="Headder Img" />
