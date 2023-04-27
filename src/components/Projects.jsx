@@ -28,6 +28,12 @@ function Projects() {
             url: 'https://vegetarian-recipe-app.vercel.app/'
         },
         {
+            title:'Lyriks App',
+            description:"Clone streaming music app",
+            imgUrl: lyriks,
+            url:'https://lyriks-1p4v.vercel.app/'
+        },
+        {
             title: "News App",
             description: "Design & Development",
             imgUrl: newsApp,
@@ -39,12 +45,6 @@ function Projects() {
             imgUrl: onlineCounter,
             url:'https://onlinecounter.vercel.app/'
         },
-        {
-            title:'Lyriks App',
-            description:"Clone streaming music app",
-            imgUrl: lyriks,
-            url:'https://lyriks-1p4v.vercel.app/'
-        }
         
     ];
     return (
