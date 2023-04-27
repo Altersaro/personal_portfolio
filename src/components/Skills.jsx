@@ -10,8 +10,9 @@ import PhpLogo from '../assets/img/php.png';
 import LaravelLogo from '../assets/img/laravel.png';
 import MySqlLogo from '../assets/img/mysql.png';
 import WordPressLogo from '../assets/img/wordpress.png';
-
-
+import AngularLogo from '../assets/img/angular.png';
+import TailwindLogo from '../assets/img/tailwind.png';
+import TypeScriptLogo from '../assets/img/typescript.png';
 
 
 
@@ -20,6 +21,8 @@ import WordPressLogo from '../assets/img/wordpress.png';
 
 
 function Skills() {
+
+    const skills = [{url:HtmlLogo},{url:CssLogo},{url:JSLogo},{url:TypeScriptLogo},{url:SassLogo},{url:ReactLogo},{url:AngularLogo},{url:PhpLogo},{url:MySqlLogo},{url:LaravelLogo},{url:WordPressLogo},{url:TailwindLogo},]
     return (
     <section className='skill'>
         <Container>
@@ -27,35 +30,13 @@ function Skills() {
                 <h2  id='skills'>Skills</h2>
                 <Col>
                 <div className='skill-bx'>
-                            <div className='item'>
-                                <img src={HtmlLogo} alt=""/>
-                            </div>
-                            <div className='item'>
-                                <img src={CssLogo} alt=""/>
-                            </div>
-                            <div className='item'>
-                                <img src={JSLogo} alt=""/>
-                            </div>
-                        
-                            <div className='item'>
-                                <img src={SassLogo} alt=""/>
-                            </div>
-                            <div className='item'>
-                                <img src={ReactLogo} alt=""/>
-                            </div>
-                            <div className='item'>
-                                <img src={PhpLogo} alt=""/>
-                            </div>
-                        
-                            <div className='item'>
-                                <img src={MySqlLogo} alt=""/>
-                            </div>
-                            <div className='item'>
-                                <img src={LaravelLogo} alt=""/>
-                            </div>
-                            <div className='item'>
-                                <img src={WordPressLogo} alt=""/>
-                            </div>
+                        {skills.map((skill)=>{
+                            return(
+                                <div className='item'>
+                                    <img src={skill.url} alt="" />
+                                </div>
+                            )
+                        })}
                 </div>
                 </Col>
             </Row>
