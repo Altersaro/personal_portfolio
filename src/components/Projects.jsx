@@ -5,6 +5,7 @@ import yourgameslist from '../assets/img/yougameslist.png';
 import newsApp from '../assets/img/newsapp.png';
 import onlineCounter from '../assets/img/Online-counter.png';
 import veggieRecipe from '../assets/img/veggieRecipe.png';
+import lyriks from '../assets/img/Lyriks.png';
 
 
 
@@ -38,6 +39,12 @@ function Projects() {
             imgUrl: onlineCounter,
             url:'https://onlinecounter.vercel.app/'
         },
+        {
+            title:'Lyriks App',
+            description:"Clone streaming music app",
+            imgUrl: lyriks,
+            url:'https://lyriks-1p4v.vercel.app/'
+        }
         
     ];
     return (
